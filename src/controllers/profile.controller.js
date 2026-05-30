@@ -4,6 +4,7 @@ const profileModel = require('../models/profile.model');
 
 async function analyzeAndStoreProfile(req, res) {
     try {
+        
         const { username } = req.body;
 
         const existing = await profileModel.findOne({
