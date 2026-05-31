@@ -2,11 +2,6 @@ const express = require('express');
 const router = express.Router();
 const profileController = require('../controllers/profile.controller');
 
-router.get('/',(req, res)=>{
-    res.status(200).json({
-        message: "API is live"
-    })
-})
 
 router.post('/profiles', profileController.analyzeAndStoreProfile);
 
