@@ -108,6 +108,18 @@ http://localhost:10000
 
 ## API Endpoints
 
+### Health Check
+
+**GET /**
+
+Response:
+
+```json
+{
+  "message": "API is live"
+}
+```
+
 ### Analyze and Store Profile
 
 **POST**
