@@ -1,7 +1,6 @@
 const express = require('express');
 const router = express.Router();
 const profileController = require('../controllers/profile.controller');
-const { route } = require('../app');
 
 router.get('/',(req, res)=>{
     res.status(200).json({
