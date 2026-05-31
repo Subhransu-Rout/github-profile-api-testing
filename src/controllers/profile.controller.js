@@ -6,9 +6,6 @@ async function analyzeAndStoreProfile(req, res) {
     try {
         
         const { username } = req.body;
-        
-        console.log("POST HIT");
-        console.log(req.body);
 
         const existing = await profileModel.findOne({
             where: {username}
